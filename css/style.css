@@ -7,6 +7,7 @@
 
 html, body {
   height: 100%;
+  scroll-behavior: smooth;
 }
 body {
     font-family: 'DM Sans', sans-serif;
@@ -287,13 +288,14 @@ ul, li {
 
 .remember__body {
     margin-top: 100px;
+    margin-bottom: 100px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
 .remember__body--item-2 img {
-    margin-top: 140px;
+    margin-top: 130px;
     margin-bottom: 40px;
 }
 
@@ -333,4 +335,240 @@ ul, li {
     font-family: "Prata", serif;
     font-size: 52px;
     line-height: 61px;
+}
+
+.remember__lines {
+    width: 100%;
+}
+
+.remember__line {
+    width: 100%;
+    height: 2px;
+    background-color: var(--dark);
+    opacity: 1;
+    position: relative;
+}
+
+.remember__line::before,
+.remember__line::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: var(--dark);
+    opacity: 0.7;
+}
+
+.remember__line::after {
+    transform: translateY(10px);
+}
+
+.remember__line::before {
+    transform: translateY(-10px);
+}
+
+.projects__heading {
+    margin-top: 100px;
+    color: var(--dark);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.projects__heading h1 {
+    font-size: 70px;
+    font-family: 'Prata', serif;
+    line-height: 76px;
+}
+
+.projects__heading p {
+    font-size: 24px;
+    line-height: 30px;
+    font-family: 'Prata', serif;
+}
+
+.projects__heading p a {
+    text-decoration: underline;
+}
+
+.projects__img {
+    margin-top: 80px;
+    position: relative;
+}
+
+.projects__img .wrapper h2 {
+    position: absolute;
+    bottom: 0;
+    transform: translateY(-200%);
+    font-size: 50px;
+    font-weight: 500;
+    line-height: 60px;
+}
+
+.projects__img .wrapper p {
+    position: absolute;
+    bottom: 0;
+    transform: translateY(-250%);
+    font-size: 24px;
+    line-height: 34px;
+    font-family: 'Prata', serif;
+}
+
+.projects__img .wrapper p a {
+    text-decoration: underline;
+}
+
+/* designers */
+
+#designers .container {
+    background-color: var(--dark);
+}
+
+#designers .wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 160px;
+}
+
+.designers__heading h1{
+    font-family: 'Prata', serif;
+    font-size: 70px;
+    margin-bottom: 30px;
+}
+
+.designers__heading p {
+    font-size: 24px;
+    line-height: 34px;
+    opacity: .5;
+    margin-bottom: 25px;
+    max-width: 616px;
+    width: 100%;
+}
+
+.designers__heading a {
+    margin-top: 15px;
+    font-family: 'Prata', serif;
+    font-size: 24px;
+    line-height: 30px;
+    text-decoration: underline;
+}
+
+/* articles */
+
+.articles__heading {
+    margin-top: 180px;
+    color: var(--dark);
+    text-align: center;
+}
+
+.articles__heading h1 {
+    font-size: 70px;
+    font-family: 'Prata', serif;
+}
+
+.articles__heading a {
+    font-family: 'Prata', serif;
+    margin-top: 50px;
+    text-decoration: underline;
+}
+
+.articles__body {
+    margin-top: 150px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--dark);
+}
+
+.articles__body--item-1 h3,
+.articles__body--item-2 h3 {
+    margin-top: 30px;
+    margin-bottom: 35px;
+    font-size: 30px;
+    font-family: 'Prata', serif;
+}
+
+.articles__item--line {
+    width: 100%;
+    height: 2px;
+    background-color: var(--dark);
+    opacity: .5;
+}
+
+.articles__body--footer {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 535px;
+    width: 100%;
+    margin-bottom: 180px;
+}
+
+.articles__body--footer a {
+    font-family: 'Prata', serif;
+    font-size: 18px;
+    text-decoration: underline;
+}
+
+.articles__body--footer p {
+    opacity: .5;
+}
+
+.footer .container {
+    background-color: var(--dark);
+}
+
+.button__footer {
+    padding-top: 90px;
+    text-align: center;
+    color: var(--milk);
+    font-family: 'Prata', serif;
+}
+
+.button__footer a {
+    font-size: 24px;
+    opacity: .5;
+}
+
+.footer__body {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer__body--item-1 h2 {
+    font-size: 30px;
+    font-family: 'Prata', serif;
+    margin-bottom: 70px;
+}
+
+.footer__body--item-1 li{
+    list-style: circle;
+}
+
+.footer__body--item-1 li {
+    font-size: 30px;
+}
+
+.footer__body--item-1 li span {
+    font-family: 'Prata', serif;
+    font-size: 60px;
+    opacity: 0.5;
+}
+
+.footer__footer {
+    margin-top: 150px;
+}
+
+.footer__footer ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer__footer li p {
+    font-size: 24px;
+    opacity: .5;
 }

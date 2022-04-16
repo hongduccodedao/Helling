@@ -12,6 +12,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- main css -->
     <link rel="stylesheet" href="./css/style.css">
     <!-- responsive -->
@@ -27,9 +29,9 @@
                     <img src="./assets/img/Logo.png" alt="Logo">
                     <ul class="header__navbar--links">
                         <li><a href="">home</a></li>
-                        <li><a href="">projects</a></li>
-                        <li><a href="">designers</a></li>
-                        <li><a href="">articles</a></li>
+                        <li><a href="#projects">projects</a></li>
+                        <li><a href="#designers">designers</a></li>
+                        <li><a href="#articles">articles</a></li>
                     </ul>
                     <h5><a href="">Contact</a></h5>
                 </nav>
@@ -100,10 +102,126 @@
                         <h2>We don’t renovate space, we transform them</h2>
                     </div>
                 </div>
+                <div class="remember__lines">
+                    <div class="remember__line"></div>
+                </div>
             </div>
         </div>
     </section>
+    <!-- projects -->
+    <section class="projects" id="projects">
+        <div class="container">
+            <div class="wrapper">
+                <!-- heading -->
+                <div class="projects__heading">
+                    <h1>Our latest projects</h1>
+                    <p><a href="">All Projects</a></p>
+                </div>
+            </div>
+            <div class="projects__img">
+                <img src="./assets/img/project.png" alt="">
+                <div class="wrapper">
+                    <h2>Dining Room</h2>
+                    <p><a href="">View Details</a></p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- designers -->
+    <section class="designers" id="designers">
+        <div class="container">
+            <div class="wrapper">
+                <!-- heading -->
+                <div class="designers__heading">
+                    <h1>Our designers</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Blandit mauris etiam faucibus laoreet vestibulum</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Blandit mauris etiam faucibus laoreet vestibulum nam. Gravida aenean orci, facilisis senectus.</p>
+
+                    <a href="">See All Designers</a>
+                </div>
+                <!-- image -->
+                <div class="designers__image">
+                    <img src="./assets/img/designer.png" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- articles -->
+    <section class="articles" id="articles">
+        <div class="container">
+            <div class="wrapper">
+                <!-- heading -->
+                <div class="articles__heading">
+                    <h1>Our latest articles</h1>
+                    <a href="">Read All Articles</a>
+                </div>
+                <!-- body -->
+                <div class="articles__body">
+                    <div class="articles__body--item-1">
+                        <img src="./assets/img/articles01.png" alt="">
+                        <h3>Why your client needs interior design</h3>
+                        <div class="articles__item--line"></div>
+                        <div class="articles__body--footer">
+                            <a href="">Read More</a>
+                            <p>April 30, 2020</p>
+                        </div>
+                    </div>
+                    <div class="articles__body--item-2">
+                        <img src="./assets/img/articles02.png" alt="">
+                        <h3>How to decore your home</h3>
+                        <div class="articles__item--line"></div>
+                        <div class="articles__body--footer">
+                            <a href="">Read More</a>
+                            <p>April 30, 2020</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="wrapper">
+                <div class="button__footer">
+                    <a href="#"><i class="fa-solid fa-arrow-up-from-bracket"></i> <br> Go to the top</a>
+                </div>
+                <!-- body -->
+                <div class="footer__body">
+                    <div class="footer__body--item-1">
+                        <h2>Stay in touch with us</h2>
+                        <ul>
+                            <li>DM us on: <br>
+                                <span>hello@heling.com</span>
+                            </li>
+                            <li>Call us on: <br>
+                                <span>+2(930) 859-464</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer__body--item-2">
+                        <img src="./assets/img/footer.png" alt="">
+                    </div>
+                </div>
+                <!-- footer -->
+                <div class="footer__footer">
+                    <ul>
+                        <li>
+                            <p>©Heling 2021.</p> 
+                        </li>
+                        <li>
+                            <img src="./assets/img/Logo.png" alt="">
+                        </li>
+                        <li>
+                            <p>Privacy Policy</p> 
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
     <!-- main js -->
+    <script src="https://kit.fontawesome.com/7dd86c08e8.js" crossorigin="anonymous"></script>
     <script src="./js/main.js"></script>
 </body>
 </html>
