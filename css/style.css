@@ -59,6 +59,10 @@ ul, li {
 
 /* header */
 
+.header {
+    background-color: var(--dark);
+}
+
 .header .container {
     background-color: var(--dark);
 }
@@ -165,6 +169,10 @@ ul, li {
 }
 
 /* banner */
+
+#banner {
+    background-color: var(--dark);
+}
 
 #banner .container {
     background-color: var(--dark);
@@ -420,6 +428,10 @@ ul, li {
 
 /* designers */
 
+#designers {
+    background-color: var(--dark);
+}
+
 #designers .container {
     background-color: var(--dark);
 }
@@ -530,6 +542,12 @@ ul, li {
 .button__footer a {
     font-size: 24px;
     opacity: .5;
+}
+
+/* footer */
+
+.footer {
+    background-color: var(--dark);
 }
 
 .footer__body {
