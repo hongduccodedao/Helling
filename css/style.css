@@ -101,38 +101,8 @@ ul, li {
     text-decoration: underline;
 }
 
-/* menu button */
-
 .header__navbar--icons {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 23px;
-    height: 23px;
-    cursor: pointer;
-    transition: var(--smooth);
-    z-index: 6;
-}
-  
-.header__navbar--icon {
-    width: 23px;
-    height: 6px;
-    background-color: var(--milk);
-    transition: var(--smooth);
-    position: relative;
-  }
-  
-.header__navbar--icon:before {
-    content: "";
-    position: absolute;
-    width: 12px;
-    height: 6px;
-    background-color: var(--milk);
-    transition: var(--smooth);
-}
-  
-.header__navbar--icon:before {
-    transform: translateY(-12px);
+    display: none;
 }
 
 /* line */

@@ -1,13 +1,98 @@
 /* Mobile: width < 740px */
 @media only screen and (max-width: 46.1875em) {
+
     .wrapper {
         padding-left: 15px;
         padding-right: 15px;
     }
-    /* header */
-    .header__navbar--links {
+
+    #overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background: rgba(0, 0, 0, 0.4);
+        z-index: 4;
         display: none;
     }
+      
+    #overlay.show {
+        display: initial;
+    }
+
+    /* header */
+    .header {
+        position: relative;
+    }
+
+    .header__navbar--links {
+        /* display: none; */
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 60%;
+        height: 100%;
+        background-color: var(--dark);
+        z-index: 5;
+        transition: var(--smooth);
+        transform: translateX(-100%);
+        opacity: 0;
+        padding-top: 100px;
+        padding-bottom: 200px;
+    }
+
+    .header__navbar--links li a {
+        color: var(--milk);
+        font-size: 1.2rem;
+        opacity: 1;
+        text-decoration: none;
+        transition: var(--smooth);
+    }
+
+    .header__navbar--links.navbar__open {
+        transform: translateX(0);
+        opacity: 1;
+        transition: var(--smooth);
+    }
+
+    /* menu button */
+
+    .header__navbar--icons {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 23px;
+        height: 23px;
+        cursor: pointer;
+        transition: var(--smooth);
+        z-index: 6;
+    }
+    
+    .header__navbar--icon {
+        width: 23px;
+        height: 6px;
+        background-color: var(--milk);
+        transition: var(--smooth);
+        position: relative;
+    }
+    
+    .header__navbar--icon:before {
+        content: "";
+        position: absolute;
+        width: 12px;
+        height: 6px;
+        background-color: var(--milk);
+        transition: var(--smooth);
+    }
+    
+    .header__navbar--icon:before {
+        transform: translateY(-12px);
+    }
+
     /* banner */
     #banner .wrapper {
         display: flex;
